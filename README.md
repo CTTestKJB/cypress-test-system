@@ -12,6 +12,6 @@ To get the app running, the following commands are required:</br>
 2 - Run tests in headless mode: **npm run cy:local-headless:ui ENVIRONMENT=staging,USERNAME=<username>,PASSWORD=<password>,ENV_URL=<environment-base-url>**</br>
 3 - To run the test in UI, run **npm run cy:open:e2e ENVIRONMENT=staging,USERNAME="username",PASSWORD="password",ENV_URL="environment-base-url"**</br>
 
-The **USERNAME** and **PASSWORD** are required by the site as an authentication mechanism. The **ENV_URL** is the url of the primaryBid environment
+The **USERNAME** and **PASSWORD** are required by the site as an authentication mechanism. The **ENV_URL** is the url of the primaryBid environment. </br>
 
 Environment=staging is another feature of the app. You can specify environment specific values in Json files and the can be picked up by the **cypress/support/index.js**. The config files are stored in the **config** folder.
