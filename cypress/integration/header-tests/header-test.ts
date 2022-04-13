@@ -24,24 +24,3 @@ context('Actions', () => {
     })
   });
 });
-
-// context('Actions', () => {
-//   beforeEach(() => {
-//     cy.visit(
-//       'https://staging.theculturetrip.com/experiences/throw-error?nocache=1&featureFlags=experienceBooking=0',
-//       {
-//         onBeforeLoad(win) {
-//           cy.stub(win, 'open');
-//         },
-//       }
-//     );
-//   });
-//   sizes.forEach((size) => {
-//     it(`Check http status 500 page for size ${size}`, () => {
-//       cy.window().then((win) => {
-//         cy.viewport(size);
-//         cy.contains(exist500Text);
-//       });
-//     });
-//   });
-// });

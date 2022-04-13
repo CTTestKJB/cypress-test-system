@@ -1,7 +1,7 @@
 const path = require('path')
 
 module.exports = {
-  entry: './cypress/support/index.js',
+  entry: 'index.js',
   module: {
     rules: [
       {

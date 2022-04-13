@@ -9,16 +9,16 @@ context('Actions', () => {
     visitPage()
   });
   //Add sizes
-  // sizes.forEach((size) => {
-  //   it(`open signup page and validate email and Password for size ${size}`, () => {
-  //     cy.window().then((win) => {
-  //       cy.viewport(size);
-  //       goToSignupForm(size);
-  //       validateEmailAndPassword();
+  sizes.forEach((size) => {
+    it(`open signup page and validate email and Password for size ${size}`, () => {
+      cy.window().then((win) => {
+        cy.viewport(size);
+        goToSignupForm(size);
+        validateEmailAndPassword();
 
-  //     });
-  //   });
-  // });
+      });
+    });
+  });
 
   sizes.forEach((size) => {
     it(`Fully signup for size ${size} ${size}`, () => {
