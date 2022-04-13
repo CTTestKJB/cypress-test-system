@@ -1,0 +1,7 @@
+{
+  "testFiles": "**/*.{feature,features}",
+  "supportFile": "./cypress/support/index.js",
+  "video": false,
+  "chromeWebSecurity": false
+  
+}
