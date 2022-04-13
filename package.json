@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Keyvans Cypress Interview Repo ",
   "scripts": {
-    "cy:open:e2e": "cypress open --config  defaultCommandTimeout=20000,responseTimeout=90000,integrationFolder=cypress/integration --env",
+    "cy:open:e2e": "cypress open --config  defaultCommandTimeout=20000,responseTimeout=90000 --env",
     "cy:local-headless:ui": "cypress run --config defaultCommandTimeout=20000,responseTimeout=90000,integrationFolder=cypress/integration --headless --env",
     "lint": "eslint --ext .ts,.tsx '**/**/*' --fix",
     "dev": "webpack --mode development",

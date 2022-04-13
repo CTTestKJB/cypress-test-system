@@ -17,29 +17,12 @@
  */
 
 
-// module.exports = (on, config) => {
-//   const cucumber = require('cypress-cucumber-preprocessor').default
-//   const wp = require('@cypress/webpack-preprocessor')
-
-//   on('file:preprocessor', file => {
-// 		return file.filePath.includes('.feature')
-// 			? cucumber()(file)
-// 			: wp({
-// 			  webpackOptions: require('../../webpack.config'),
-// 			})(file)
-// 	})
-// }
-
-
-   
-const cucumber = require("cypress-cucumber-preprocessor").default;
-const browserify = require("@cypress/browserify-preprocessor");
+const wp = require('@cypress/webpack-preprocessor');
 
 module.exports = (on) => {
   const options = {
-    ...browserify.defaultOptions,
-    typescript: require.resolve("typescript"),
+    webpackOptions: require('../../webpack.config'),
   };
 
-  on("file:preprocessor", cucumber(options));
+  on('file:preprocessor', wp(options));
 };

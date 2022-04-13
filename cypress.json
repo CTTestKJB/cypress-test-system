@@ -1,7 +1,8 @@
 {
-  "testFiles": "**/*.{feature,features}",
-  "supportFile": "./cypress/support/index.js",
+  "viewportWidth": 1200,
+  "viewportHeight": 800,
+  "supportFile": "cypress/support/index.js",
   "video": false,
   "chromeWebSecurity": false
-  
+
 }
