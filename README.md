@@ -15,3 +15,5 @@ To get the app running, the following commands are required:</br>
 The **USERNAME** and **PASSWORD** are required by the site as an authentication mechanism. The **ENV_URL** is the url of the primaryBid environment. </br>
 
 Environment=staging is another feature of the app. You can specify environment specific values in Json files and the can be picked up by the **cypress/support/index.js**. The config files are stored in the **config** folder.
+
+Using node **v14.13.1**</p>
