@@ -25,10 +25,10 @@ before(async () => {
     const configEnv = await cy.readFile(`cypress/config/cypress.${Cypress.env('ENVIRONMENT')}.json`);
     const env = configEnv['env'];
     const baseUrl = env['baseUrlValue'];
-    cy.log(baseUrl);
+
     cy.log(Cypress.env('USERNAME'));
     cy.log(Cypress.env('PASSWORD'))
-    Cypress.env('user.env.baseUrlValue', baseUrl);
+    Cypress.env('user.env.baseUrlValue', Cypress.env('ENV_URL'));
     Cypress.env('user.env.username', Cypress.env('USERNAME'));
     Cypress.env('user.env.password', Cypress.env('PASSWORD'));
 });
