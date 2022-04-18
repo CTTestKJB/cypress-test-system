@@ -29,9 +29,6 @@
 // 			})(file)
 // 	})
 // }
-
-
-   
 const cucumber = require("cypress-cucumber-preprocessor").default;
 const browserify = require("@cypress/browserify-preprocessor");
 
